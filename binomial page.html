@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Binomial tests</title>
+
+    <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./Styles/binomial_styles.css">
+</head>
+
+<header>
+    <div class="logo">
+            <a href="main page.html"><img src="./Images/Logo.png" alt="logo"></a>
+        </div>
+</header>
+
+
+<body>
+    <div class="page-wrapper">
+        <h1 class="page-title">Choose an A/B-testing approach:</h1>
+
+        <div class="buttons-container"> 
+            <a href="fixed-based horizon.html" class="button binomial-button">Fixed-based horizon</a>
+            <a href="byesian testing.html" class="button non-binomial-button">Byesian testing</a>
+            <a href="sequential sampling.html" class="button non-binomial-button">Sequential sampling</a>
+        </div>
+
+        <div class="tips"> 
+            <p class="header-tip">&#128161;<b>Tips:</b></p>
+
+            <ul><p><b>Fixed-based horizon:</b>
+                <li>In fixed-based horizon testing, the sample size is determined before the experiment begins based on power analysis or other statistical considerations. This approach ensures that the experiment has a sufficient number of observations to detect a meaningful effect with the desired level of statistical confidence.</li>
+                <li>This method is beneficial for planning and resource allocation, as it provides a clear framework for the duration and scale of the testing needed. It also helps in minimizing the risk of overestimating the effectiveness of an intervention due to random chance, as the sample size is calculated to provide adequate statistical power.</li>
+            </p></ul>
+
+
+            <ul><p><b>Bayesian Testing:</b>
+                <li><b>Prior Knowledge:</b> Used to integrate prior knowledge or assumptions with new data, updating hypothesis probabilities accordingly.</li>
+                <li><b>Flexibility:</b> Allows you to estimate probability distributions, providing a deeper understanding of possible outcomes.</li>
+                <li><b>Continuous update:</b> You can easily update the analysis with new data, keeping the results up-to-date.</li>
+            </p></ul>
+
+            <ul><p><b>Sequential sampling:</b>
+                <li>This method allows for continuous data collection and analysis until a pre-defined decision criterion is met, such as a certain sample size or statistical confidence level. It enables more efficient use of resources by potentially stopping the test early if the results are conclusive.</li>
+                <li>Sequential sampling is particularly useful in scenarios where the cost of data collection is high or when quick decisions are necessary. It offers a flexible approach to testing, allowing adjustments based on interim results without compromising the integrity of the test.</li>
+                <li>Unlike traditional fixed sample size methods, sequential sampling can lead to faster decision-making with fewer observations, provided that the observed effect size is sufficiently large. This method is beneficial in reducing the risk of making type I and type II errors by allowing for continuous monitoring and adjustments based on the data as it is collected.</li>
+            </p></ul>
+
+
+        </div>
+
+    </div> 
+</body>
+
+</html>
